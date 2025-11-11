@@ -1,0 +1,5 @@
+<odoo>
+<record model="res.groups" id="estate_manager">
+<field name="name">Estate Manager</field>
+</record>
+</odoo>
