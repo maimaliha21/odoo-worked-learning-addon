@@ -1,0 +1,13 @@
+// Keep the age column narrow and left aligned to avoid large gaps.
+.o_list_table .o_data_cell[data-name="age"],
+.o_list_table .o_list_header_cell[data-name="age"] {
+    flex: 0 0 120px;
+    text-align: left;
+}
+
+// Prevent the name column from stretching excessively.
+.o_list_table .o_data_cell[data-name="name"],
+.o_list_table .o_list_header_cell[data-name="name"] {
+    flex: 0 0 220px;
+}
+

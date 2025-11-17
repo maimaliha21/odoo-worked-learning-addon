@@ -1,52 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<data>
-    <record id="house_1" model="estate.property">
-        <field name="name">Demo House</field>
-        <field name="expected_price">250000</field>
-        <field name="postcode">10001</field>
-        <field name="bedrooms">3</field>
-        <field name="living_area">120</field>
-        <field name="garden">1</field>
-        <field name="garden_area">40</field>
-        <field name="garden_orientation">south</field>
+    <!-- Demo Authors -->
+    <record id="author_1" model="library.author">
+        <field name="name">J.K. Rowling</field>
+        <field name="age">58</field>
     </record>
-    </data>
-    <data>
-    <record id="house_2" model="estate.property">
-        <field name="name">Demo House</field>
-        <field name="expected_price">250000</field>
-        <field name="postcode">10001</field>
-        <field name="bedrooms">3</field>
-        <field name="living_area">120</field>
-        <field name="garden">1</field>
-        <field name="garden_area">40</field>
-        <field name="garden_orientation">south</field>
+
+    <record id="author_2" model="library.author">
+        <field name="name">Stephen King</field>
+        <field name="age">76</field>
     </record>
-    </data>
-    <data>
-    <record id="house_3" model="estate.property">
-        <field name="name">Demo House</field>
-        <field name="expected_price">250000</field>
-        <field name="postcode">10001</field>
-        <field name="bedrooms">3</field>
-        <field name="living_area">120</field>
-        <field name="garden">1</field>
-        <field name="garden_area">40</field>
-        <field name="garden_orientation">south</field>
+
+    <!-- Demo Books -->
+    <record id="book_1" model="library.book">
+        <field name="name">Harry Potter and the Philosopher's Stone</field>
+        <field name="author_id" ref="author_1"/>
+        <field name="published_date">1997-06-26</field>
     </record>
-    </data>
-    <data>
-    <record id="house_4" model="estate.property">
-        <field name="name">Demo House</field>
-        <field name="expected_price">250000</field>
-        <field name="postcode">10001</field>
-        <field name="bedrooms">3</field>
-        <field name="living_area">120</field>
-        <field name="garden">1</field>
-        <field name="garden_area">40</field>
-        <field name="garden_orientation">south</field>
+
+    <record id="book_2" model="library.book">
+        <field name="name">The Shining</field>
+        <field name="author_id" ref="author_2"/>
+        <field name="published_date">1977-01-28</field>
     </record>
-    </data>
-    
 </odoo>
